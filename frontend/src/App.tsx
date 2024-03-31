@@ -10,6 +10,7 @@ import {
 } from "./redux/slices/appSlice";
 import CryptoData from "./components/CryptoData/CryptoData";
 import { fetchPopulationData } from "./redux/slices/populationSlice";
+import { Loader } from "rsuite";
 
 function App() {
   const data = useAppSelector((state) => state.populationSlice.populationData);
@@ -60,14 +61,16 @@ function App() {
           {activeSidenavItem === "1" && (
             <div className="__chart">
               {chartLoading ? (
-                <>loading...</>
+                <>
+                  <Loader />
+                </>
               ) : (
                 data && <ChartDisplay data={data} />
               )}
             </div>
           )}
           {activeSidenavItem === "2" && (
-            <div className="__crypto">
+            <div className="__crypto w-full h-full">
               <CryptoData />
             </div>
           )}
