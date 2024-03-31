@@ -2,7 +2,6 @@ import { fetchCryptoData } from "@/redux/slices/cryptoSlice";
 import { useAppDispatch, useAppSelector } from "@/redux/store";
 import { useEffect } from "react";
 import { Loader } from "rsuite";
-import { FaBitcoin } from "react-icons/fa";
 import CurrencyCard from "./CurrencyCard";
 import BitcoinIcon from "./BitcoinLogo/BitcoinIcon";
 

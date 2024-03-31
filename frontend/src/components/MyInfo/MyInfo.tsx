@@ -1,5 +1,5 @@
 import myImg from "@/assets/tushar.jpg";
-import { FaChartPie, FaGithub, FaReact } from "react-icons/fa";
+import { FaChartPie, FaReact } from "react-icons/fa";
 import {
   SiRedux,
   SiTailwindcss,

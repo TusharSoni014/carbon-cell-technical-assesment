@@ -7,7 +7,7 @@ interface TimeData {
   updateduk: string;
 }
 
-interface CurrencyData {
+export interface CurrencyData {
   code: string;
   symbol: string;
   rate: string;
