@@ -11,6 +11,7 @@ import {
 import CryptoData from "./components/CryptoData/CryptoData";
 import { fetchPopulationData } from "./redux/slices/populationSlice";
 import { Loader } from "rsuite";
+import MyInfo from "./components/MyInfo/MyInfo";
 
 function App() {
   const data = useAppSelector((state) => state.populationSlice.populationData);
@@ -75,7 +76,9 @@ function App() {
             </div>
           )}
           {activeSidenavItem === "3" && (
-            <div className="__example">example data</div>
+            <div className="__example w-full h-full">
+              <MyInfo />
+            </div>
           )}
         </div>
       </div>

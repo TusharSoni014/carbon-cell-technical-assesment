@@ -42,7 +42,7 @@ export const Sidebar = () => {
               Crypto Data
             </Nav.Item>
             <Nav.Item className="flex" eventKey="3" icon={<GridIcon />}>
-              Example Item
+              Tech Stack
             </Nav.Item>
           </Nav>
         </Sidenav.Body>
