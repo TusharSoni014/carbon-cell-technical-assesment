@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/index.ts",
+    "build": "tsc",
     "swagger": "swagger-jsdoc -d swagger.json -o ./swagger"
   },
   "keywords": [],
